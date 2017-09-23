@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(kinect2_registration CXX)
 
+add_definitions(-fexceptions)
+
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DBT_USE_DOUBLE_PRECISION -Wall")
 # Unused warnings
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wuninitialized -Winit-self -Wunused-function -Wunused-label -Wunused-variable -Wunused-but-set-variable -Wunused-but-set-parameter")

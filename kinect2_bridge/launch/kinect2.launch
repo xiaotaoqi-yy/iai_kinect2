@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+
+<launch>
+  <include file="$(find kinect2_bridge)/launch/kinect2_bridge_update.launch"/>
+  <node pkg="tf2_ros" type="static_transform_publisher" name="camera_broadcaster" args="0 0 0 0 0 0 1 map kinect2_link" />
+  <node pkg="rviz" type="rviz" name="point_cloud_viewer"/>
+</launch>
